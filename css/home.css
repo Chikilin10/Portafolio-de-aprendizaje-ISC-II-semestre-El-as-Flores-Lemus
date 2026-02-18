@@ -101,7 +101,7 @@ section {
 .inicioImg img:hover{
     transform: scale(1.05);
     box-shadow: 0 0 25px var(--main-color),
-                0 0 50px var(--main-color);
+                0 0 55px var(--main-color);
 }
 
 @keyframes floatImage {
@@ -184,4 +184,78 @@ section {
     background-color: var(--bg-color);
     color: var(--text-color);
     border: 0.2rem solid var(--text-color);
+}
+
+/* Seccion Sobre Mí */
+
+.sobreMi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: var(--snd-bg-color);
+}
+
+.sobremiImg img{
+    width: 25vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+    cursor: pointer;
+    animation: floatImage 4s ease-in-out infinite;
+    transition: 0.4s ease;
+}
+
+.sobremiImg img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 55px var(--main-color);
+}
+
+.sobreMi .titulo{
+    font-size: 7rem;
+}
+
+.sobremiContenido{
+    padding: 0 4rem;
+}
+
+.sobreMi .sobremiContenido h2{
+    text-align: left;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.sobreMi .sobremiContenido h3{
+    font-size: 3rem;
+}
+
+.sobreMi .sobremiContenido h3 span{
+    color: var(--bg-color);
+}
+
+.sobreMi .sobremiContenido p{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+.sobreMi .sobremiContenido .leermas .btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: var(--text-color);
+    border-radius: 4rem;
+    box-shadow: none;
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.sobreMi .sobremiContenido .leermas .btn:hover{
+    box-shadow: 0 0 1.6rem var(--text-color);
+    transform: scale(1.1) translateY(-10px);
+    background-color: var(--snd-bg-color);
+    color: var(--text-color);
+    border: 0.2rem solid var(--text-color);
+
 }
