@@ -80,3 +80,108 @@ section {
     cursor: pointer;
     display: none;
 }
+
+/* Seccion Inicio */
+
+.inicio{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.inicioImg img{
+    width: 25vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+    cursor: pointer;
+    animation: floatImage 4s ease-in-out infinite;
+    transition: 0.4s ease;
+}
+
+.inicioImg img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color);
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.4rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.inicioContenido{
+    margin-left: 5rem;
+}
+
+.inicioContenido h3{
+    font-size: 3.7rem;
+    font-weight: 700;
+}
+
+.inicioContenido h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+
+.inicioContenido span{
+    color: var(--snd-bg-color);
+}
+
+.inicioContenido h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.inicioContenido p{
+    font-size: 1.6rem;
+}
+
+.redesSociales a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    background: transparent;
+    border: 0.2rem solid var(--text-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--text-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+}
+
+.redesSociales a:hover{
+    transform: scale(1.2) translateY(-10px);
+    background: var(--text-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 25px var(--text-color);
+}
+
+.descargarCv .btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: var(--text-color);
+    border-radius: 4rem;
+    box-shadow: none;
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.descargarCv .btn:hover{
+    box-shadow: 0 0 1.6rem var(--text-color);
+    transform: scale(1.1) translateY(-10px);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 0.2rem solid var(--text-color);
+}
